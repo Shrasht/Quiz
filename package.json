@@ -1,0 +1,13 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js quiz API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

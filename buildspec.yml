@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing...
+      - npm install
+  pre_build:
+    commands:
+      - echo Running audit...
+      - npm audit || true
+  build:
+    commands:
+      - echo Building...
+      - npm run build || echo "No build step"
+  post_build:
+    commands:
+      - echo Build complete!
+artifacts:
+  files:
+    - "**/*"
